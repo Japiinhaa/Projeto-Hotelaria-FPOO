@@ -3,19 +3,8 @@ from classe2 import *
 import os
 clientes = {}
 cliente = []
-quartos = ['1- Apartamento simples', '2- Apartamento simples casal', '3- Apartamento simples casal', '4- Apartamento simples', ]
+quartos = ['1- Apartamento simples', '2- Apartamento simples casal', '3- Apartamento simples casal', '4- Apartamento duplo', '5- Apartamento simples', '6- Apartamento duplo casal', '7- Apartamento duplo casal','8- Apartamento duplo', '9- Apartamento_master', '10- Apartamento_master', '11- Apartamento_Luxo', '12- Apartamento_Luxo' ]
 
-
-def set_cliente():
-
-        nome = input('Digite seu nome: ')
-        cpf = input('Digite o seu CPF: ')
-        quarto = 0
-        cliente = [nome, cpf, quarto]
-        clientes.append(cliente)
-        print('Cliente cadastrado com sucesso!')
-        os.system('pause')
-        os.system('cls')
 
 
 def buscarcliente():
@@ -32,13 +21,11 @@ def buscarespecificações():
         n_quarto = int(input('Digite o numero do quarto que deseja buscar: '))
         for n_quarto in quartos:
             if cliente[0] == n_quarto:
-                print(f'Nome: {cliente[0]} \nCPF: {cliente[1]}\nQuarto {cliente[2]}')
+                print(f'Nome do reservante: {cliente[0]} \nCPF: {cliente[1]}\nQuarto {cliente[2]}')
                 return
         print('Cliente não encontrado.')
         os.system('pause')
         os.system('cls')
-
-
 
 
 
@@ -57,9 +44,9 @@ def main(opcoes):
             ()
             os.system("cls")
         case 4:
-              os.system("cls")
-              print('Você selecionou a opção de Listar clientes!')
-            ()
+            os.system("cls")
+            print('Você selecionou a opção de Listar clientes!')
+            buscarcliente()
 
-        case :
-              print('Opção inválida!')
+        case _:
+            print('Opção inválida!')

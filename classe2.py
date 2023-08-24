@@ -1,3 +1,10 @@
+clientes = {}
+cliente = []
+quartos = ['1- Apartamento simples', '2- Apartamento simples casal', '3- Apartamento simples casal', '4- Apartamento duplo', '5- Apartamento simples', '6- Apartamento duplo casal', '7- Apartamento duplo casal','8- Apartamento duplo', '9- Apartamento_master', '10- Apartamento_master', '11- Apartamento_Luxo', '12- Apartamento_Luxo' ]
+import os
+
+
+
 class Hotel():
     def __init__(self):
         
@@ -20,9 +27,19 @@ class Quartos(Hotel):
 
 
     def listar_quartos():
-        
-         
 
+    def set_cliente():
+
+        nome = input('Digite seu nome: ')
+        cpf = input('Digite o seu CPF: ')
+        quarto = 0
+        if quarto == 
+        cliente = [nome, cpf, quarto]
+        clientes.append(cliente)
+        print('Cliente cadastrado com sucesso!')
+        os.system('pause')
+        os.system('cls')
+    
 
 
 
@@ -30,34 +47,33 @@ class Quartos(Hotel):
 class AP_luxo(Quartos):
     def especificações():
         capacidade = "4"
-        preço = "4085"
+        preço = "3600"
         itens = 'Cama king size casal\nTV 8k 55"\nVista direta pro mar \nDuas vagas para garagem \nArea gourmet \nDuas suites\n sala de estar grande\n cozinha e com lavanderia com espaço para cobertura '
-        tamanho = '300m²'
-
+        tamanho = '220m²'
 
        
 class AP_master(Quartos):
     def especificações():
         capacidade = "6"
-        preço = "1859"
+        preço = "1300"
         itens = '2 beliches e uma cama de casal simples \nventilador de teto nos quartos \nVista direta pro mar \nDuas vagas para garagem\numa suite\numa sala com mesa de estar\n uma cozinha pequena com lavanderia'
-        tamanho = '300m²'        
+        tamanho = '170m²'        
 
 
 class AP_simples(Quartos):
     def especificações():
-        capacidade = "4"
-        preço = "4085"
+        capacidade = "2"
+        preço = "350"
         itens = 'Cama king size \nTV 8k 55" \nVista direta pro mar \nDuas vagas para garagem \nArea gourmet \nDuas suites'
-        tamanho = '300m²'            
+        tamanho = '50m²'   
 
 
 class AP_simples_casal(Quartos):
     def especificações():
         capacidade = "2"
-        preço = "4085"
+        preço = "500"
         itens = 'Cama king size \nTV 8k 55" \nVista direta pro mar \nDuas vagas para garagem \nArea gourmet \nDuas suites'
-        tamanho = '300m²'
+        tamanho = '90m²'
 
 
 class AP_duplo(Quartos):
@@ -65,11 +81,11 @@ class AP_duplo(Quartos):
         capacidade = "2"
         preço = "4085"
         itens = 'Cama king size \nTV 8k 55" \nVista direta pro mar \nDuas vagas para garagem \nArea gourmet \nDuas suites'
-        tamanho = '300m²'
+        tamanho = '70m²'
         
 class AP_duplo_casal(Quartos):
     def especificações():
         capacidade = "2"
         preço = "4085"
         itens = 'Cama king size \nTV 8k 55" \nVista direta pro mar \nDuas vagas para garagem \nArea gourmet \nDuas suites'
-        tamanho = '300m²'
+        tamanho = '111m²'
