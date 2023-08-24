@@ -17,6 +17,7 @@ def buscarcliente():
         os.system('pause')
         os.system('cls')
 
+
 def buscarespecificações():
         n_quarto = int(input('Digite o numero do quarto que deseja buscar: '))
         for n_quarto in quartos:
@@ -26,7 +27,6 @@ def buscarespecificações():
         print('Cliente não encontrado.')
         os.system('pause')
         os.system('cls')
-
 
 
 def main(opcoes):
@@ -47,6 +47,5 @@ def main(opcoes):
             os.system("cls")
             print('Você selecionou a opção de Listar clientes!')
             buscarcliente()
-
         case _:
             print('Opção inválida!')
