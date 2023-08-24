@@ -1,4 +1,4 @@
-from classe import *
+from classe2 import *
 from algo import *
 import os
 

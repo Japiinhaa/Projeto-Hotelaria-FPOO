@@ -45,7 +45,7 @@ class Quartos(Hotel):
 
 
 
-    def listar_quartos():
+#    def listar_quartos():
 
     
 
